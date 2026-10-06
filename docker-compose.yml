@@ -1,0 +1,58 @@
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: trust_sleep
+      POSTGRES_USER: trust_sleep
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - trust_sleep_db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U trust_sleep -d trust_sleep"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    restart: unless-stopped
+    environment:
+      TRUST_SLEEP_ENSEMBLE_BUNDLE: /models/ensemble_bundle_v5.pt
+      TRUST_SLEEP_DATABASE_URL: postgresql://trust_sleep:${POSTGRES_PASSWORD}@postgres:5432/trust_sleep
+      TRUST_SLEEP_API_KEY: ${TRUST_SLEEP_API_KEY}
+      TRUST_SLEEP_ALLOWED_ORIGINS: http://localhost:8501
+      TRUST_SLEEP_LLM_ENDPOINT: ${TRUST_SLEEP_LLM_ENDPOINT:-}
+      TRUST_SLEEP_MAX_STREAM_POINTS: 600
+    volumes:
+      - ./model_package:/models:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/health/ready', timeout=5).raise_for_status()"]
+      interval: 15s
+      timeout: 5s
+      retries: 20
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.dashboard
+    restart: unless-stopped
+    environment:
+      TRUST_SLEEP_BACKEND_URL: http://backend:8000
+      TRUST_SLEEP_API_KEY: ${TRUST_SLEEP_API_KEY}
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "8501:8501"
+
+volumes:
+  trust_sleep_db:

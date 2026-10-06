@@ -1,0 +1,42 @@
+{
+  "signal_order": [
+    "chest",
+    "flow",
+    "pulse",
+    "spo2"
+  ],
+  "event_classes": [
+    "no_event",
+    "apnea",
+    "hypopnea",
+    "artifact_or_uncertain"
+  ],
+  "subtype_classes": [
+    "obstructive",
+    "central",
+    "mixed",
+    "indeterminate"
+  ],
+  "metadata_fields": [
+    "age",
+    "bmi",
+    "neck_circumference",
+    "altitude_m",
+    "baseline_spo2",
+    "heart_failure",
+    "stroke_history",
+    "opioid_use",
+    "smoking",
+    "sedative_use",
+    "pulmonary_disease",
+    "tonsillar_hypertrophy"
+  ],
+  "policy": {
+    "event_confidence": 0.85,
+    "subtype_confidence": 0.8,
+    "max_variance": 0.02,
+    "min_signal_quality": 0.75,
+    "require_singleton_set": true,
+    "pediatric_always_review": true
+  }
+}

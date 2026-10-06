@@ -1,0 +1,198 @@
+{
+  "package": "trust_sleep_deployment_v5",
+  "version": "5.0.0",
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 136,
+      "sha256": "a04235e07622eff1c8954b4724556463d8b2397a62e11f289df1a3c2b3b159e2"
+    },
+    {
+      "path": "DEPLOYMENT.md",
+      "bytes": 2465,
+      "sha256": "787760f358e7e3b7fa2998eba73cc1fe20d2fccc897f1454c0516f684f83f3cf"
+    },
+    {
+      "path": "Dockerfile.backend",
+      "bytes": 349,
+      "sha256": "c74140abd18062b62468eed538dca995505e34f041ffcc513ca3c34c8e4616a8"
+    },
+    {
+      "path": "Dockerfile.dashboard",
+      "bytes": 414,
+      "sha256": "7d758144fc4e6ece183808396f4c8d470d854af95d6630061852783f43538728"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7673,
+      "sha256": "25c2df2fe4d7a00b592d3fe17835cd28033da9abb87c3d0cbbb4cef481334639"
+    },
+    {
+      "path": "active_learning_v5.py",
+      "bytes": 2856,
+      "sha256": "ac9e05a11b72e1ebbcd3a2819734de67436bf459654ed437b36f394773fad254"
+    },
+    {
+      "path": "alert_manager.py",
+      "bytes": 2346,
+      "sha256": "8d79607b26d8cf6764c5162cec3b581693bec99b9c1c0d1846ef37e2a1d34882"
+    },
+    {
+      "path": "audit_store_v5.py",
+      "bytes": 5447,
+      "sha256": "73e92aa50418dec733c018b6601fd45d0b222528304583bcd74d90ee45ffc23c"
+    },
+    {
+      "path": "backend_v5.py",
+      "bytes": 11076,
+      "sha256": "4db1f00115dd2e707555a5aada93f5194f4b03b471925d1ae8d3c1c4eef63c39"
+    },
+    {
+      "path": "benchmark_v4.py",
+      "bytes": 1235,
+      "sha256": "a73f531353d31f68fc93596c584de2c796a1c4306eb5dcb4ec3c1a263a67d47f"
+    },
+    {
+      "path": "calibration.py",
+      "bytes": 6002,
+      "sha256": "60c21464975446fe7c0894c77dfca8e75a17309ff1e977c507d761d90949713c"
+    },
+    {
+      "path": "clinical_logic.py",
+      "bytes": 4354,
+      "sha256": "58e563970600563357b8002dc2b53eb1e31252a3bcb7f71c6a6d80d8aec91319"
+    },
+    {
+      "path": "config.json",
+      "bytes": 743,
+      "sha256": "05c159f5ed94296b06660977d9920564cf8b0338f1d73696f4e01cfe8be2d943"
+    },
+    {
+      "path": "dashboard_v5.py",
+      "bytes": 18983,
+      "sha256": "fd8be581092c055a43c41b28a0c3f2eeafbd9e24ef042a726b3ae159a868ede0"
+    },
+    {
+      "path": "datasets.py",
+      "bytes": 9736,
+      "sha256": "a2cdb749fe18b449c8bcc5231668f9ffdd8601651ac9a4453459dc5f732d6ac9"
+    },
+    {
+      "path": "deployment_readiness_v5.py",
+      "bytes": 2151,
+      "sha256": "3c35904728ea434e81108a7b9505f56c93a006a51d40c85e13f8d02924c0d575"
+    },
+    {
+      "path": "docker-compose.yml",
+      "bytes": 1621,
+      "sha256": "a2250d0ea821ddbd6491b60eb9f40a3ca543166ec6bed4c3c863ceccae72072e"
+    },
+    {
+      "path": "drift_monitor_v5.py",
+      "bytes": 3370,
+      "sha256": "382e263e07c6e9b38602ea8498e3683547433756486d9d87a6d9060d34305807"
+    },
+    {
+      "path": "ensemble_calibration_v5.py",
+      "bytes": 10820,
+      "sha256": "848f7a2b3cf24891799bcf329028386ad713336137adbf4d74ba3dd22e1b3a02"
+    },
+    {
+      "path": "ensemble_runner_v5.py",
+      "bytes": 2242,
+      "sha256": "53c6bddce0ba48c442edf065042cd48eba7e4bb0d5a1f2ad113ea5d92d68f210"
+    },
+    {
+      "path": "evaluate_external_v5.py",
+      "bytes": 7119,
+      "sha256": "bf61252885e26a847327a505ad713491658360922013a6717ac08c2056ce1c59"
+    },
+    {
+      "path": "evaluate_local_v5.py",
+      "bytes": 3544,
+      "sha256": "9c63af63348f1381af3bced4b524ca5fcadc4a05204d6f023ad72cc5d27ef231"
+    },
+    {
+      "path": "external_data.py",
+      "bytes": 3428,
+      "sha256": "551caf6a26d80db39a3319f24f87379240d21176a9aa14f6cd57609a10de9307"
+    },
+    {
+      "path": "fhir_v5.py",
+      "bytes": 3989,
+      "sha256": "bd563ee8b42bcc80e8b821932c3a43c476376c882a62e6d183ae90c6bd8a883b"
+    },
+    {
+      "path": "inference_v5.py",
+      "bytes": 18732,
+      "sha256": "05b0314d580781a3b85ddfe62454429dccf7d7fbec52b9f7fe65d81bf23b30a3"
+    },
+    {
+      "path": "llm_explainer.py",
+      "bytes": 4432,
+      "sha256": "4a5b5e0199f97625c1c6bc90628753432742d388d947a4b2fde492bf0bc5661c"
+    },
+    {
+      "path": "metadata_scaler.py",
+      "bytes": 1967,
+      "sha256": "9cbf1e8bac2fbc973ed0dfdb94d28004a1b7889c50a8f3c5961a6947f62beb4c"
+    },
+    {
+      "path": "model_v4.py",
+      "bytes": 7035,
+      "sha256": "13653f757ddbeb6b6c7df653f79b4b2f86374f99107b86e9e79861bf08bab050"
+    },
+    {
+      "path": "package_model_bundle_v5.py",
+      "bytes": 1549,
+      "sha256": "0a520c42d16976b19eb4a94ff464277270e72fce2a2da00fa01af4c6a2a99cb6"
+    },
+    {
+      "path": "prepare_edf_manifest.py",
+      "bytes": 5609,
+      "sha256": "349481b934df4999798e4c2328175b0f552cce9d563e1d733679aaf962236c4e"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 223,
+      "sha256": "bf63bacf567a85b107585874850d810d26b5dfa4b9521f6bfabd2ccf085edc69"
+    },
+    {
+      "path": "session_state.py",
+      "bytes": 1165,
+      "sha256": "a81f0d51b8b2fb51f03db4f9a9b44ab9b3159bfb6d3cbae11e8742daa6ce5732"
+    },
+    {
+      "path": "statistics_v4.py",
+      "bytes": 1885,
+      "sha256": "aa272ab52d860152afc6905ba41b0001cfd3e4329603afbaa665868fdd3789e2"
+    },
+    {
+      "path": "streaming_v5.py",
+      "bytes": 2544,
+      "sha256": "6011bf8f679eaff5e2e0b69f674d0b84a492d21ad518868b586dd64373ba0eb8"
+    },
+    {
+      "path": "train_multisource_v5.py",
+      "bytes": 22255,
+      "sha256": "e06077f2b98af758ca2884876cae4e2ab8721da78d369aa109256e0cd8f46c8a"
+    },
+    {
+      "path": "trust_engine.py",
+      "bytes": 20350,
+      "sha256": "1662ba1460df9108547ea00310d1a59b34e8c6f7def45513925cb15f19881dbc"
+    },
+    {
+      "path": "trust_policy.py",
+      "bytes": 2064,
+      "sha256": "61e437e52f6d4de78c712576d3c59fd5d5734f38fc0507f0f69145fda8be8486"
+    }
+  ],
+  "validation": {
+    "syntax_checked": true,
+    "core_inference_smoke_test": true,
+    "backend_rest_smoke_test": true,
+    "llm_default_off": true,
+    "real_dataset_training_executed": false
+  }
+}
