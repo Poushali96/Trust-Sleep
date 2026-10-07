@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-06T15:03:43.776744",
+  "master_h5": "/content/drive/MyDrive/TrustSleep_Pediatric_Only/experiment1b.h5",
+  "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "numpy": "2.1.3",
+  "pandas": "2.2.3",
+  "torch": "2.11.0+cu130",
+  "cuda_available": true,
+  "cuda_version": "13.0",
+  "cudnn_version": 92700,
+  "device": "Tesla T4",
+  "seeds": [
+    271828,
+    314159,
+    161803,
+    141421,
+    173205
+  ]
+}

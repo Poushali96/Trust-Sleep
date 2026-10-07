@@ -1,0 +1,30 @@
+{
+  "dataset": "experiment1b.h5",
+  "signals": [
+    "psg_chest_rn_mean",
+    "psg_flow_dr_rn_mean",
+    "psg_pulse_rn_mean",
+    "psg_spo2_rn_mean"
+  ],
+  "epoch_shape": [
+    30,
+    4
+  ],
+  "split_fractions": {
+    "train": 0.6,
+    "validation": 0.1,
+    "platt": 0.05,
+    "threshold": 0.05,
+    "conformal": 0.1,
+    "test": 0.1
+  },
+  "seeds": [
+    271828,
+    314159,
+    161803,
+    141421,
+    173205
+  ],
+  "experiment1_seed": 271828,
+  "notes": "All splits are recording-disjoint. Preprocessing is fitted on training only."
+}
